@@ -12,7 +12,7 @@
 
 ## Hecho por:
 
-###Martín B.
+### Martín B.
 
 ### Linkedin: www.linkedin.com/in/martinbergagno
 
@@ -20,7 +20,10 @@
 Martín B. portfolio
 
 https://martin-b-07e5.github.io/porfolio/
+<<<<<<< HEAD
 
 https://porfolio-vercel-gray.vercel.app/
 
 
+=======
+>>>>>>> 19c826d97b1a8475b9d8f0d745894ea363d69cbe
