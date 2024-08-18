@@ -1,0 +1,207 @@
+/*fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*variables*/
+:root {
+    /*colors*/
+    --color-primary: #000000; /* black */
+    --color-secondary: #F6F6F6; /* almost white */
+    --color-tertiary: #22D4FD; /* light blue */
+    --color-hover: #272727; /* dark gray */
+    --color-quaternary: #FFB6C1; /* pink */
+    --color-quinary: #00BFFF; /* deep sky blue / azul cielo profundo */
+    --color-senary: #4682B4; /* steel blue / azul acero */
+    --color-septenary: #5F9EA0; /* cadet green / verde cadete */
+    --color-octonary: #FF1493; /* vibrant pink / rosa vibrante */
+    --color-nonary: #DB7093; /* light pink / rosa suave */
+    --color-denary: #F0F8FF; /* Alice Blue */
+
+    /*fonts*/
+    --font-primary: 'Krona One', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+}
+
+/*end variables*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--color-primary); /* black */
+    color: var(--color-secondary); /* almost white*/
+    box-sizing: border-box;
+}
+
+/*clases*/
+.header {
+    padding: 2% 0 0.6% 15%; /*top, right, bottom, left values*//*el ultimo valor es lo que me lo centra el header, igual que la presentación*/
+    background-color: black;
+}
+
+.header__menu {
+    display: flex;
+    gap: 5rem; /* 80px espacios entre los elementos*/
+}
+
+.header__menu__link {
+    font-family: var(--font-secondary); /* Montserrat */
+    font-weight: 600;
+    font-size: 1.5rem; /*1rem = 16px*/
+    color: var(--color-tertiary); /* light blue */
+}
+
+.header__menu__link:hover {
+    color: var(--color-tertiary); /* Color del enlace al pasar el ratón - light blue*/
+    text-decoration: underline;
+}
+
+
+.urgente {
+    background-color: #ffcc00; /* Bright yellow background */
+    color: #ff0000; /* Red text */
+    font-weight: bold; /* Bold text */
+    padding: 0.9375rem; /* 15px Padding (Espaciado interno) */
+    border: 0.125rem solid #ff0000; /* 2px Red border */
+    border-radius: 0.3125rem; /* 5px Rounded corners */
+    margin-bottom: 0.625rem; /* 10px Space between paragraphs */
+}
+
+
+.presentation {
+    padding: 4% 15%; /* vertical, horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5.125rem; /*82px*/
+}
+
+.presentation__contenido {
+    width: 50%; /*before 615px*/
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; /*40px vertical-horizontal - Espacio entre los párrafos */
+}
+
+.presentation__contenido__title {
+    font-size: 2.25rem; /*36px*/
+    font-family: var(--font-primary); /* Krona One */
+}
+
+.title-destaque {
+    color: var(--color-tertiary); /* light blue */
+}
+
+.presentation__contenido__paragraph {
+    font-size: 1.5rem;
+    font-family: var(--font-secondary); /* Montserrat */
+}
+
+.presentation__enlaces {
+    display: flex;
+    flex-direction: column; /*antes estaba como row*/
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /*32px vertical horizontal*//* Espacio entre los enlaces */
+}
+
+.presentation__enlaces__subtitulo {
+    font-family: var(--font-primary); /* Krona One */
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentation__enlaces__link {
+    border: 0.125rem solid var(--color-tertiary); /*2px light blue */
+    border-radius: 0.5rem; /*8px Bordes redondeados */
+    font-family: var(--font-secondary); /* Montserrat */
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-secondary); /* Color del texto del enlace - almost white */
+    padding: 1.375rem 0; /*22px*/
+    text-align: center;
+    /*text-decoration: none; !* Quita el subrayado (ya estaba en <a>) *!*/
+    width: 50%; /*before 378px*/
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*este no funciona. Creería que es por los a creados mas abajo*/
+.presentation__enlaces__link:hover {
+    color: var(--color-tertiary); /* Color del texto del enlace al pasar el mouse */ /* light blue */
+    background-color: var(--color-hover); /* dark gray */
+    /*padding: 3%;*/
+}
+
+.presentation__imagen {
+    width: 50%;
+}
+
+.footer {
+    font-family: var(--font-secondary); /* Montserrat */
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--color-primary); /* Texto negro */
+    background-color: var(--color-tertiary); /* Fondo cyan*/ /* light blue */
+    padding: 1.5rem; /*24px*/
+    text-align: center;
+}
+
+/*end clases*/
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#targeting_media_features*/
+@media (max-width: 1250px) {
+
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentation {
+        flex-direction: column-reverse; /*pone la ig arriba*/
+        padding: 5%;
+    }
+
+    .presentation__contenido {
+        width: auto;
+        /*width: 100%;*/ /*mismo resultado que con auto*/
+    }
+
+}
+
+
+/*Estilo para todos los enlaces*/
+a {
+    color: #1E90FF; /* Color del enlace */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+/* Estilo para enlaces no visitados */
+a:link {
+    color: gray; /* Color del enlace no visitado */
+}
+
+/* Estilo para enlaces visitados */
+a:visited {
+    color: #8A2BE2; /* Color del enlace visitado */
+}
+
+/* Estilo para el enlace cuando el mouse está sobre él */
+a:hover {
+    color: var(--color-tertiary); /* Color del enlace al pasar el ratón */ /* light blue */
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    background-color: #272727; /* Color de fondo del enlace al pasar el ratón */
+}
+
+/* Estilo para el enlace en estado activo (cuando se hace clic) */
+a:active {
+    color: #FF4500; /* Color del enlace al hacer clic */
+}
+

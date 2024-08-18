@@ -1,0 +1,28 @@
+body {
+    background: #ADD8E6; /* Azul claro */
+    color: #2E2E2E; /* Gris oscuro */
+}
+
+a {
+    color: #4682B4; /* Azul acero */
+    text-decoration: none;
+}
+
+a:link {
+    color: #4682B4; /* Azul acero */
+}
+
+a:visited {
+    color: #5F9EA0; /* Verde cadete */
+}
+
+a:hover {
+    color: #00BFFF; /* Azul cielo profundo */
+    background-color: #F0F8FF; /* Fondo azul muy claro al pasar el ratón */
+    text-decoration: underline;
+}
+
+a:active {
+    color: #1E90FF; /* Azul brillante */
+    background-color: #E0FFFF; /* Fondo cian claro */
+}

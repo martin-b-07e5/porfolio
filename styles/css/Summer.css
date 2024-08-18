@@ -1,0 +1,28 @@
+body {
+    background: #FFD700; /* Amarillo dorado */
+    color: #333333; /* Texto oscuro */
+}
+
+a {
+    color: #1E90FF; /* Azul brillante */
+    text-decoration: none;
+}
+
+a:link {
+    color: #1E90FF; /* Azul brillante */
+}
+
+a:visited {
+    color: #4682B4; /* Azul acero */
+}
+
+a:hover {
+    color: #FF4500; /* Naranja fuerte */
+    background-color: #FFFFE0; /* Fondo amarillo claro al pasar el ratón */
+    text-decoration: underline;
+}
+
+a:active {
+    color: #FF6347; /* Rojo tomate */
+    background-color: #FFFACD; /* Fondo amarillo claro */
+}

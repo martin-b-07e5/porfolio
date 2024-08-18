@@ -1,0 +1,28 @@
+body {
+    background: #E3FCEC; /* Verde claro */
+    color: #3B3B3B; /* Texto oscuro */
+}
+
+a {
+    color: #FF69B4; /* Rosa brillante para destacar */
+    text-decoration: none;
+}
+
+a:link {
+    color: #FF69B4; /* Rosa brillante */
+}
+
+a:visited {
+    color: #C71585; /* Rosa oscuro */
+}
+
+a:hover {
+    color: #FF1493; /* Rosa vibrante */
+    background-color: #FFFFFF; /* Fondo blanco al pasar el ratón */
+    text-decoration: underline;
+}
+
+a:active {
+    color: #DB7093; /* Rosa suave */
+    background-color: #FFFAFA; /* Fondo casi blanco */
+}

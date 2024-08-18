@@ -1,0 +1,28 @@
+body {
+    background: #FF7F50; /* Naranja coral */
+    color: #2F4F4F; /* Gris oscuro */
+}
+
+a {
+    color: #8B4513; /* Marrón rojizo */
+    text-decoration: none;
+}
+
+a:link {
+    color: #8B4513; /* Marrón rojizo */
+}
+
+a:visited {
+    color: #A0522D; /* Marrón tierra */
+}
+
+a:hover {
+    color: #CD5C5C; /* Marrón rojizo claro */
+    background-color: #F5DEB3; /* Fondo trigo al pasar el ratón */
+    text-decoration: underline;
+}
+
+a:active {
+    color: #8B0000; /* Rojo oscuro */
+    background-color: #FFE4B5; /* Fondo mocasín */
+}
